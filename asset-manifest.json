@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/valentine-day-app/static/css/main.60a9ec28.css",
+    "main.js": "/valentine-day-app/static/js/main.b9e8b303.js",
+    "static/js/592.7f72a991.chunk.js": "/valentine-day-app/static/js/592.7f72a991.chunk.js",
+    "static/media/wasted.gif": "/valentine-day-app/static/media/wasted.1197786073141719d1ee.gif",
+    "static/media/sending-love-giving-love.gif": "/valentine-day-app/static/media/sending-love-giving-love.76077b6a6282ffb7fce0.gif",
+    "index.html": "/valentine-day-app/index.html",
+    "main.60a9ec28.css.map": "/valentine-day-app/static/css/main.60a9ec28.css.map",
+    "main.b9e8b303.js.map": "/valentine-day-app/static/js/main.b9e8b303.js.map",
+    "592.7f72a991.chunk.js.map": "/valentine-day-app/static/js/592.7f72a991.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60a9ec28.css",
+    "static/js/main.b9e8b303.js"
+  ]
+}
