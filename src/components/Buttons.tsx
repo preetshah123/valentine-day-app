@@ -51,7 +51,7 @@ const Buttons = ({show, setPressedNo, setIsOpen}:Props) => {
     if (show) {
         return (
             <div className="buttonWrapper">
-                {/* {showConfetti && (
+                {showConfetti && (
                     <Confetti
                         width={width}
                         height={height}
@@ -62,7 +62,7 @@ const Buttons = ({show, setPressedNo, setIsOpen}:Props) => {
                 )}
                 {showConfetti && (
                     <Horray/>
-                )} */}
+                )}
                 <div className='title'>
                     <h1>{title}</h1>
                 </div>

@@ -19,9 +19,6 @@ function App() {
       {pressedNo && (
         <Wasted/>
       )}
-      {modalIsOpen && (
-        <EmailModal modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>
-      )}
     </div>
   );
 }
