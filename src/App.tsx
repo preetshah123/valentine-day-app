@@ -4,7 +4,6 @@ import Flowers from './components/Flowers';
 import Buttons from './components/Buttons';
 import FirstQuestion from './components/FirstQuestion';
 import Wasted from './components/Wasted';
-import EmailModal from './components/EmailModal';
 
 function App() {
   const [show, setShow] = useState<boolean>(false);
