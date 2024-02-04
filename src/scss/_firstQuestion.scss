@@ -1,0 +1,16 @@
+.firstQuestion {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    &__next {
+        padding-top: 4rem;
+        font-size: 3rem;
+        color: #AA336A;
+    }
+}
+

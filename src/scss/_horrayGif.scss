@@ -1,0 +1,18 @@
+.horrayGif {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    z-index: 100;
+
+    img {
+        width: 40rem;
+    }
+}
+
+.horrayWrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}

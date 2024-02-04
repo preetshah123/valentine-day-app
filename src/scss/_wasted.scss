@@ -1,0 +1,25 @@
+.gif {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0rem;
+    left: 0rem;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    flex-direction: column;
+
+    img {
+        width: 80%;
+        height: 80%;
+    }
+
+    h1 {
+        position: absolute;
+        top: 15%;
+        font-size: 5rem;
+        color: 	#1d1e1f;
+    }
+}

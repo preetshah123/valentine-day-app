@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './App.scss';
+import Flowers from './components/Flowers';
+import Buttons from './components/Buttons';
+import FirstQuestion from './components/FirstQuestion';
+import Wasted from './components/Wasted';
+import EmailModal from './components/EmailModal';
 
 function App() {
+  const [show, setShow] = useState<boolean>(true);
+  const [pressedNo, setPressedNo] = useState<boolean>(false);
+  const [modalIsOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FirstQuestion hide={show} setShow={setShow}/>
+      <Flowers show ={show}/>
+      <Buttons show ={show} setPressedNo={setPressedNo} setIsOpen={setIsOpen}/>
+      {pressedNo && (
+        <Wasted/>
+      )}
+      {modalIsOpen && (
+        <EmailModal modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>
+      )}
     </div>
   );
 }
