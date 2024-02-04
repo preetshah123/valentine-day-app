@@ -11,7 +11,6 @@ type Style = {
 type Props = {
     show: boolean;
     setPressedNo: (value: boolean) => void;
-    setIsOpen: (value:boolean) => void;
 }
 
 const valueList = [
@@ -26,7 +25,7 @@ const valueList = [
     "I MIGHT CRY"
 ]
 
-const Buttons = ({show, setPressedNo, setIsOpen}:Props) => {
+const Buttons = ({show, setPressedNo}:Props) => {
     const { width, height } = {width: window.innerWidth, height: window.innerHeight};
     const [style, setStyle] = useState<Style>();
     const [value, setValue] = useState<string>('No');
@@ -44,7 +43,6 @@ const Buttons = ({show, setPressedNo, setIsOpen}:Props) => {
 
     const clickYes = () => {
         setShowConfetti(true);
-        setIsOpen(true);
         setTitle('HOORRRRAYYYYY!!')
     }
 

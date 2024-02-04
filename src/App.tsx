@@ -7,15 +7,14 @@ import Wasted from './components/Wasted';
 import EmailModal from './components/EmailModal';
 
 function App() {
-  const [show, setShow] = useState<boolean>(true);
+  const [show, setShow] = useState<boolean>(false);
   const [pressedNo, setPressedNo] = useState<boolean>(false);
-  const [modalIsOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <div className="App">
       <FirstQuestion hide={show} setShow={setShow}/>
       <Flowers show ={show}/>
-      <Buttons show ={show} setPressedNo={setPressedNo} setIsOpen={setIsOpen}/>
+      <Buttons show ={show} setPressedNo={setPressedNo}/>
       {pressedNo && (
         <Wasted/>
       )}
